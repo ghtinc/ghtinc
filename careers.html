@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Positions Available - GeniusHub Technologies</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+    /* Global Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .main-container {
+      display: grid;
+      place-items: center; /* Centers the content both horizontally and vertically */
+      min-height: calc(100vh - 100px); /* Adjust height excluding header/footer space */
+      padding: 20px;
+    }
+
+    .content {
+      background-color: white;
+      width: 100%;
+      max-width: 800px;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      text-align: left;
+    }
+
+    .content h1 {
+      font-size: 28px;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .content h2 {
+      font-size: 22px;
+      color: #16a085;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+
+    .content p {
+      font-size: 16px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .content ul {
+      list-style: none;
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    .content li {
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .content li strong {
+      color: #16a085;
+    }
+
+    .content .apply-button {
+      display: block;
+      text-align: center;
+      padding: 12px 25px;
+      background-color: #16a085;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+      font-size: 18px;
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .content .apply-button:hover {
+      background-color: #1abc9c;
+    }
+
+  </style>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="company-details">
+      <div class="left-section">
+        <img src="ght.png" alt="GHT" class="company-logo">
+        <div class="company-name-tagline">
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimizing IT, Maximizing Success</div>
+        </div>
+      </div>
+          <div class="right-section">
+      <div class="contact-info">
+        <div class="phone">
+          &#128222; <span class="phone-number">&nbsp;+1 (214) 432-5727</span> <!-- Phone Unicode -->
+        </div>
+        <div class="email">
+          &#9993; <a href="mailto:info@ghtinc.org" class="email-link">&nbsp;info@ghtinc.org</a> <!-- Email Unicode -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="dropdown">
+      <a href="index.html">GHT</a>
+    </div>
+    <div class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="industries.html">Industries</a>
+    </div>
+    <div class="dropdown">
+      <a href="careers.html">Careers</a>
+    </div>
+    <div class="dropdown">
+      <a href="training.html">Training</a>
+    </div>
+    <div class="dropdown">
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </div>
+  
+  
+<div class="nav-small">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">GHT</a></li>
+    <li class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".nav-small .menu");
+    menu.classList.toggle("active");
+
+    // Add or remove the event listener based on the menu's state
+    if (menu.classList.contains("active")) {
+      document.addEventListener("click", closeMenuOnClickOutside);
+    } else {
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    }
+  }
+
+  function closeMenuOnClickOutside(event) {
+    const menu = document.querySelector(".nav-small .menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    // Close the menu if the click is outside both the menu and the hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+      menu.classList.remove("active");
+      document.removeEventListener("click", closeMenuOnClickOutside); // Clean up listener
+    }
+  }
+</script>
+  <!-- Content Section -->
+  <div class="main-container">
+  <div class="content">
+    <h1>Positions Available at GeniusHub Technologies</h1>
+    <p>We are seeking qualified candidates for positions that involve utilizing a combination of the following software skills:</p>
+
+    <h2>Software Skills:</h2>
+    <ul>
+      <li><strong>Business Intelligence Tools:</strong> BO (Business Objects), Cognos</li>
+      <li><strong>Operating Systems:</strong> UNIX, Solaris</li>
+      <li><strong>Databases:</strong> SQL Server, SQL, Oracle, DB2, INFORMIX, Sybase, Access</li>
+      <li><strong>Programming Languages:</strong> VB, PB, .NET, VC++, Java, JavaScript, VB Script, COBOL, CICS</li>
+      <li><strong>Web Technologies:</strong> HTML, JSP, ASP, WebLogic, WebSphere, AWT, TCP/IP</li>
+      <li><strong>Data Warehousing:</strong> ETL Tools</li>
+      <li><strong>Other:</strong> SAP (All Modules), GUI, J2EE</li>
+    </ul>
+
+    <h2>Qualifications:</h2>
+    <p>A Bachelor’s or Master’s degree (or foreign education equivalent) in a related field is required, depending on the position.</p>
+    <p>For certain positions, we accept a degree equivalent in education & experience or any combination of education, training, and/or experience that qualifies the applicant to perform the duties of the job offered.</p>
+
+    <h2>Additional Requirements:</h2>
+    <ul>
+      <li>Willingness to relocate to various client sites in the U.S. as needed.</li>
+    </ul>
+
+    <p>If you are interested, please send your resume and specify the position you are seeking to [contact information].</p>
+
+    <a href="contact-us.html" class="apply-button">Apply Now</a>
+  </div>
+  </div>
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Services Section -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <div class="service-columns">
+        <div class="service-column">
+          <ul class="footer-links">
+		    <li><a href="cloud.html">Cloud Services</a></li>
+            <li><a href="platform.html">Platform Engineering</a></li>
+			<li><a href="ai-ml-ds.html">AI/ML/Data Science</a></li>
+          </ul>
+        </div>
+        <div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="erp.html">ERP Implementations</a></li>
+            <li><a href="application.html">Application Development</a></li>
+            <li><a href="staff.html">Staff Augmentation</a></li>                    
+          </ul>
+        </div>
+		<div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="digital.html">E-Commerce</a></li>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="offshore.html">Offshore Outsourcing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📞 +1 (214) 432-5727</p>
+      <p>✉️ info@ghtinc.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

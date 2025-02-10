@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Why GeniusHub Technologies?</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Assuming you have a separate CSS file -->
+</head>
+<body>
+<style>
+body {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+.why-ght-content {
+  width: 80%;
+  margin: 40px auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 2rem;
+  color: #444;
+  margin-top: 30px;
+  border-bottom: 2px solid #eaeaea;
+  padding-bottom: 5px;
+}
+
+p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+ul {
+  margin-left: 20px;
+  list-style-type: square;
+}
+
+ul li {
+  font-size: 1rem;
+  color: #555;
+  margin-bottom: 8px;
+}
+
+ul li a {
+  color: #337ab7;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+ul li a:hover {
+  color: #23527c;
+}
+
+.why-ght-content p:last-child {
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 768px) {
+  .why-ght-content {
+    width: 90%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+}
+
+</style>
+  <!-- Reuse the Header -->
+  <div class="header">
+    <div class="company-details">
+      <div class="left-section">
+        <img src="ght.png" alt="GHT" class="company-logo">
+        <div class="company-name-tagline">
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimizing IT, Maximizing Success</div>
+        </div>
+      </div>
+          <div class="right-section">
+      <div class="contact-info">
+        <div class="phone">
+          &#128222; <span class="phone-number">&nbsp;+1 (214) 432-5727</span> <!-- Phone Unicode -->
+        </div>
+        <div class="email">
+          &#9993; <a href="mailto:info@ghtinc.org" class="email-link">&nbsp;info@ghtinc.org</a> <!-- Email Unicode -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="dropdown">
+      <a href="index.html">GHT</a>
+    </div>
+    <div class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="industries.html">Industries</a>
+    </div>
+    <div class="dropdown">
+      <a href="careers.html">Careers</a>
+    </div>
+    <div class="dropdown">
+      <a href="training.html">Training</a>
+    </div>
+    <div class="dropdown">
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </div>
+  
+  
+<div class="nav-small">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">GHT</a></li>
+    <li class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".nav-small .menu");
+    menu.classList.toggle("active");
+
+    // Add or remove the event listener based on the menu's state
+    if (menu.classList.contains("active")) {
+      document.addEventListener("click", closeMenuOnClickOutside);
+    } else {
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    }
+  }
+
+  function closeMenuOnClickOutside(event) {
+    const menu = document.querySelector(".nav-small .menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    // Close the menu if the click is outside both the menu and the hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+      menu.classList.remove("active");
+      document.removeEventListener("click", closeMenuOnClickOutside); // Clean up listener
+    }
+  }
+</script>
+
+  <!-- Main Content for "Why GeniusHub Technologies" -->
+  <div class="why-ght-content">
+    <h1>Why GeniusHub Technologies Inc.?</h1>
+
+    <h2>More Cost Effective:</h2>
+    <p>Companies can save over 60% of the budget while using the same pool of quality talent SAP resources.</p>
+    <p>Companies can focus on what you do best, your core business.</p>
+    <p>Using GeniusHub Technologies resources is more cost-effective and flexible than hiring permanent full-time employees.</p>
+    <p>GeniusHub Technologies' track record demonstrates that we provide our services by adhering to the agreed-upon schedule and budget.</p>
+
+    <h2>Risk-Free – Guaranteed Delivery:</h2>
+    <p>Companies will not have to pay until the implementation/upgrade is successfully completed.</p>
+    <p>GeniusHub Technologies applies solutions derived from Industry Best Practices to achieve peak performance and maximum efficiency.</p>
+    <p>We guarantee project delivery and meeting deadlines is our specialty.</p>
+    <p>We provide responsive post-implementation support.</p>
+
+    <h2>Better Talent Pool:</h2>
+    <p>GeniusHub Technologies matches your requirements with our best SAP resources.</p>
+    <p>We have one of the industry's largest pools of highly professional SAP/IT consultants, the majority of them hold master's degrees.</p>
+    <p>Our consultants have:</p>
+    <ul>
+      <li>Intimate knowledge of core SAP modules and business processes</li>
+      <li>Full lifecycle implementation experience</li>
+      <li>Excellent client focus</li>
+      <li>Ability to develop and maintain relationships at all levels within the company and client organization</li>
+      <li>Effective communication skills</li>
+    </ul>
+    <p>Our track record ensures that our resources are driven to achieve and can meet and exceed your expectations to help you achieve your business results.</p>
+
+    <h2>AI Content</h2>
+    <p>Innovation at the Core: We stay ahead of the curve to provide you with cutting-edge IT solutions.</p>
+    <p>Tailored to Your Needs: No two businesses are alike—our solutions are designed with your unique goals in mind.</p>
+    <p>Commitment to Excellence: We’re dedicated to delivering outcomes that make a lasting impact. At GeniusHub Technologies, we’re here to help you reimagine what’s possible with technology.</p>
+  </div>
+
+  <!-- Reuse the Footer -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Services Section -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <div class="service-columns">
+        <div class="service-column">
+          <ul class="footer-links">
+		    <li><a href="cloud.html">Cloud Services</a></li>
+            <li><a href="platform.html">Platform Engineering</a></li>
+			<li><a href="ai-ml-ds.html">AI/ML/Data Science</a></li>
+          </ul>
+        </div>
+        <div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="erp.html">ERP Implementations</a></li>
+            <li><a href="application.html">Application Development</a></li>
+            <li><a href="staff.html">Staff Augmentation</a></li>                    
+          </ul>
+        </div>
+		<div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="digital.html">E-Commerce</a></li>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="offshore.html">Offshore Outsourcing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📞 +1 (214) 432-5727</p>
+      <p>✉️ info@ghtinc.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

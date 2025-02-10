@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GENIUSHUB TECHNOLOGIES</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="header">
+    <div class="company-details">
+      <div class="left-section">
+        <img src="ght.png" alt="GHT" class="company-logo">
+        <div class="company-name-tagline">
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimizing IT, Maximizing Success</div>
+        </div>
+      </div>
+          <div class="right-section">
+      <div class="contact-info">
+        <div class="phone">
+          &#128222; <span class="phone-number">&nbsp;+1 (214) 432-5727</span>
+        </div>
+        <div class="email">
+          &#9993; <a href="mailto:info@ghtinc.org" class="email-link">&nbsp;info@ghtinc.org</a>
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="dropdown">
+      <a href="index.html">GHT</a>
+    </div>
+    <div class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="industries.html">Industries</a>
+    </div>
+    <div class="dropdown">
+      <a href="careers.html">Careers</a>
+    </div>
+    <div class="dropdown">
+      <a href="training.html">Training</a>
+    </div>
+    <div class="dropdown">
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </div>
+  
+  
+<div class="nav-small">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">GHT</a></li>
+    <li class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".nav-small .menu");
+    menu.classList.toggle("active");
+
+    // Add or remove the event listener based on the menu's state
+    if (menu.classList.contains("active")) {
+      document.addEventListener("click", closeMenuOnClickOutside);
+    } else {
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    }
+  }
+
+  function closeMenuOnClickOutside(event) {
+    const menu = document.querySelector(".nav-small .menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    // Close the menu if the click is outside both the menu and the hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+      menu.classList.remove("active");
+      document.removeEventListener("click", closeMenuOnClickOutside); // Clean up listener
+    }
+  }
+</script>
+
+
+ <div class="carousel">
+  <div class="slides">
+    <div class="slide">
+      <img src="img1.png" alt="Image 1" class="active">
+      <div class="text-overlay">
+        <h2>Welcome to GeniusHub Technologies</h2>
+        <p>Your success, our commitment.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img2.png" alt="Image 2">
+      <div class="text-overlay">
+        <h2>Innovative Solutions</h2>
+        <p>Driving business transformation.</p>
+      </div>
+    </div>
+    <div class="slide">
+      <img src="img3.png" alt="Image 3">
+      <div class="text-overlay">
+        <h2>Expert Teams</h2>
+        <p>Delivering excellence globally.</p>
+      </div>
+    </div>
+    <div class="dots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
+    </div>
+  </div>
+</div>
+
+
+  <script>
+    const slides = document.querySelectorAll(".slides img");
+    const dots = document.querySelectorAll(".dot");
+    let currentSlide = 0;
+
+    function showSlide(index) {
+      slides.forEach((slide, i) => {
+        slide.classList.toggle("active", i === index);
+      });
+      dots.forEach((dot, i) => {
+        dot.classList.toggle("active", i === index);
+      });
+    }
+
+    setInterval(() => {
+      currentSlide = (currentSlide + 1) % slides.length; // Cycle through slides
+      showSlide(currentSlide);
+    }, 10000); // Change image every 15 seconds
+	
+	dots.forEach((dot, index) => {
+  dot.addEventListener("click", () => {
+    currentSlide = index;
+    showSlide(currentSlide);
+  });
+});
+
+// Initialize first slide
+showSlide(currentSlide);
+
+
+  </script>
+</body>
+
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Services Section -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <div class="service-columns">
+        <div class="service-column">
+          <ul class="footer-links">
+		    <li><a href="cloud.html">Cloud Services</a></li>
+            <li><a href="platform.html">Platform Engineering</a></li>
+			<li><a href="ai-ml-ds.html">AI/ML/Data Science</a></li>
+          </ul>
+        </div>
+        <div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="erp.html">ERP Implementations</a></li>
+            <li><a href="application.html">Application Development</a></li>
+            <li><a href="staff.html">Staff Augmentation</a></li>                    
+          </ul>
+        </div>
+		<div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="digital.html">E-Commerce</a></li>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="offshore.html">Offshore Outsourcing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📞 +1 (214) 432-5727</p>
+      <p>✉️ info@ghtinc.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
+  </div>
+</footer>
+
+
+
+</html>

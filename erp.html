@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ERP Implementation & SAP Development - Genius Hub Technologies</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+
+
+/* Hero Section */
+.hero {
+  background-color: #003366;
+  color: white;
+  padding: 2px 0px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.0rem;
+  margin-bottom: 5px;
+}
+
+.hero p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+/* Services Section */
+.services {
+  background-color: white;
+  padding: 30px 20px;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+h3 {
+  font-size: 1.5rem;
+  color: #003366;
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  margin-bottom: 20px;
+}
+
+ul li {
+  margin-bottom: 8px;
+}
+
+.service-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.card p {
+font-size: 1.0rem;
+  margin-bottom: 15px;
+}
+
+.card ul {
+  margin-top: 10px;
+}
+
+.card ul li {
+  font-size: 1.0rem;
+  text-align:left;
+}
+/* Card Hover Effect */
+.card:hover {
+  background-color: #D3D3D3; /* Light blue background */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+  transform: scale(1.05); /* Slight scale up */
+  transition: all 0.3s ease-in-out;
+}
+
+
+/* Contact Section */
+.contact {
+  text-align: center;
+  padding: 40px 20px;
+  background-color: #f4f4f4;
+}
+
+.contact p {
+  font-size: 1.1rem;
+  margin-bottom: 10px;
+}
+
+.contact strong {
+  color: #003366;
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .cta-btn {
+    font-size: 1rem;
+  }
+
+  .services h2 {
+    font-size: 1.7rem;
+  }
+
+  .service-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+</style>
+<body>
+  <!-- Header Section -->
+  <div class="header">
+    <div class="company-details">
+      <div class="left-section">
+        <img src="ght.png" alt="GHT" class="company-logo">
+        <div class="company-name-tagline">
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimizing IT, Maximizing Success</div>
+        </div>
+      </div>
+          <div class="right-section">
+      <div class="contact-info">
+        <div class="phone">
+          &#128222; <span class="phone-number">&nbsp;+1 (214) 432-5727</span> <!-- Phone Unicode -->
+        </div>
+        <div class="email">
+          &#9993; <a href="mailto:info@ghtinc.org" class="email-link">&nbsp;info@ghtinc.org</a> <!-- Email Unicode -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="dropdown">
+      <a href="index.html">GHT</a>
+    </div>
+    <div class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="industries.html">Industries</a>
+    </div>
+    <div class="dropdown">
+      <a href="careers.html">Careers</a>
+    </div>
+    <div class="dropdown">
+      <a href="training.html">Training</a>
+    </div>
+    <div class="dropdown">
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </div>
+  
+  
+<div class="nav-small">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">GHT</a></li>
+    <li class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".nav-small .menu");
+    menu.classList.toggle("active");
+
+    // Add or remove the event listener based on the menu's state
+    if (menu.classList.contains("active")) {
+      document.addEventListener("click", closeMenuOnClickOutside);
+    } else {
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    }
+  }
+
+  function closeMenuOnClickOutside(event) {
+    const menu = document.querySelector(".nav-small .menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    // Close the menu if the click is outside both the menu and the hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+      menu.classList.remove("active");
+      document.removeEventListener("click", closeMenuOnClickOutside); // Clean up listener
+    }
+  }
+</script>
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Expert ERP Implementation & SAP Services</h1>
+      <p>At GeniusHub Technologies, we specialize in delivering ERP solutions that drive business growth and efficiency. From SAP development to integration and continuous support, our services cater to your organizational needs across various sectors.</p>
+    </div>
+  </section>
+
+  <!-- ERP Services Section -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Comprehensive ERP & SAP Implementation Services</h2>
+      <p>We offer an array of ERP implementation services designed to streamline business operations, improve productivity, and ensure seamless integration. Our specialized SAP offerings include:</p>
+
+      <div class="service-cards">
+        <!-- SAP Development & Integration -->
+        <div class="card">
+          <h3>SAP Development, Integration, and Support</h3>
+          <p>We provide a range of SAP services, including development, integration, and ongoing support to keep your ERP systems running smoothly. Our services include SAP upgrades from R/3 to ERP 6.0 to help your business maintain modern, efficient processes.</p>
+        </div>
+
+        <!-- Human Capital Management -->
+        <div class="card">
+          <h3>Human Capital Management (HCM)</h3>
+          <p>We leverage advanced SAP tools to improve workforce management and employee satisfaction. From talent management to workforce deployment and payroll, we ensure that your HR processes align with your business goals.</p>
+          <ul>
+            <li>Workforce Analysis</li>
+            <li>Talent Management</li>
+            <li>Employee Development</li>
+            <li>Payroll Management</li>
+            <li>Self-Service Options</li>
+          </ul>
+        </div>
+
+        <!-- Supply Chain Management -->
+        <div class="card">
+          <h3>Supply Chain Management (SCM)</h3>
+          <p>Our comprehensive SAP solutions help optimize your supply chain by covering every phase—from design to procurement and logistics. We ensure efficient workflows that support your business's long-term success.</p>
+          <ul>
+            <li>Supply Chain Planning</li>
+            <li>Procurement & Manufacturing</li>
+            <li>Product Lifecycle Management</li>
+            <li>Logistics and Freight Management</li>
+          </ul>
+        </div>
+
+        <!-- Financial Management -->
+        <div class="card">
+          <h3>Financial Management</h3>
+          <p>We provide SAP-driven solutions for financial processes that enhance reporting, risk management, and compliance. From accounts payable to asset management, our financial management solutions empower businesses to tackle today’s challenges.</p>
+          <ul>
+            <li>Accounts Payable & Receivable</li>
+            <li>Controlling & Asset Management</li>
+            <li>Risk Management & Compliance</li>
+            <li>Sarbanes-Oxley Compliance</li>
+          </ul>
+        </div>
+      </div>
+<br>
+      <p>Our expertise spans multiple SAP modules to help organizations leverage the full potential of their ERP systems. Whether you need an upgrade, integration, or a comprehensive solution across departments, our team ensures smooth and effective implementation tailored to your specific business requirements.</p>
+
+      <h3>Contact Us for More Information</h3>
+      <p>If you're looking to transform your business with expert ERP solutions, get in touch with us to learn more about our services. We’re here to support your growth!</p>
+      <p>Call us at <strong>+1 (214) 432-5727</strong> or email us at <a href="mailto:info@ghtinc.org">info@ghtinc.org</a></p>
+    </div>
+  </section>
+
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Services Section -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <div class="service-columns">
+        <div class="service-column">
+          <ul class="footer-links">
+		    <li><a href="cloud.html">Cloud Services</a></li>
+            <li><a href="platform.html">Platform Engineering</a></li>
+			<li><a href="ai-ml-ds.html">AI/ML/Data Science</a></li>
+          </ul>
+        </div>
+        <div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="erp.html">ERP Implementations</a></li>
+            <li><a href="application.html">Application Development</a></li>
+            <li><a href="staff.html">Staff Augmentation</a></li>                    
+          </ul>
+        </div>
+		<div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="digital.html">E-Commerce</a></li>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="offshore.html">Offshore Outsourcing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📞 +1 (214) 432-5727</p>
+      <p>✉️ info@ghtinc.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>

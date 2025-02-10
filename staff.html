@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Staff Augmentation - GeniusHub Technologies</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Link to your CSS file -->
+</head>
+<style>
+/* Center-aligned container */
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9; /* Optional background */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Additional styles for content */
+.content {
+  padding: 40px 0;
+  background-color: #f0f0f0;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2rem;
+  color: #333;
+}
+
+.intro-text {
+  text-align: left;
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.sub-heading {
+  font-size: 1.5rem;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.staffing-model {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.model-step {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.model-step:hover{
+	background-color: #f2f0ef; /* Light blue background */
+	box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+	transform: scale(1.01); /* Slight scale up */
+	transition: all 0.3s ease-in-out;
+}
+.model-step h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.model-step ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.model-step ul li {
+  margin: 5px 0;
+}
+
+.model-step p {
+  font-size: 1.1rem;
+  color: #555;
+}
+
+
+</style>
+<body>
+  <!-- Header Section -->
+ <div class="header">
+    <div class="company-details">
+      <div class="left-section">
+        <img src="ght.png" alt="GHT" class="company-logo">
+        <div class="company-name-tagline">
+          <div class="company-name">GENIUSHUB TECHNOLOGIES INC.</div>
+          <div class="tagline">Optimizing IT, Maximizing Success</div>
+        </div>
+      </div>
+          <div class="right-section">
+      <div class="contact-info">
+        <div class="phone">
+          &#128222; <span class="phone-number">&nbsp;+1 (214) 432-5727</span> <!-- Phone Unicode -->
+        </div>
+        <div class="email">
+          &#9993; <a href="mailto:info@ghtinc.org" class="email-link">&nbsp;info@ghtinc.org</a> <!-- Email Unicode -->
+        </div>
+      </div>
+    </div>
+    </div>
+  </div>
+
+  <div class="nav">
+    <div class="dropdown">
+      <a href="index.html">GHT</a>
+    </div>
+    <div class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <a href="industries.html">Industries</a>
+    </div>
+    <div class="dropdown">
+      <a href="careers.html">Careers</a>
+    </div>
+    <div class="dropdown">
+      <a href="training.html">Training</a>
+    </div>
+    <div class="dropdown">
+      <a href="contact-us.html">Contact Us</a>
+    </div>
+  </div>
+  
+  
+<div class="nav-small">
+  <div class="hamburger" onclick="toggleMenu()">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
+  <ul class="menu">
+    <li><a href="index.html">GHT</a></li>
+    <li class="dropdown">
+      <a href="overview.html">About Us</a>
+      <div class="dropdown-content">
+        <a href="why-ght.html">Why GHT</a>
+        <a href="our-mission.html">Our Mission</a>
+        <a href="strategy.html">Strategic Framework</a>
+      </div>
+    </li>
+    <li class="dropdown">
+      <a href="services.html">Services</a>
+      <div class="dropdown-content">
+	  <a href="cloud.html">Cloud Services</a>
+	  <a href="platform.html">Platform Engineering</a>
+	  <a href="ai-ml-ds.html">AI/ML/Data Science</a>
+        <a href="erp.html">ERP Implementations</a>
+        <a href="application.html">Application Development</a>
+        <a href="quality.html">Quality Assurance</a>
+        <a href="staff.html">Staff Augmentation</a>
+        <a href="digital.html">E-Commerce</a>
+        <a href="offshore.html">Offshore Outsourcing</a>
+      </div>
+    </li>
+    <li><a href="industries.html">Industries</a></li>
+    <li><a href="careers.html">Careers</a></li>
+    <li><a href="training.html">Training</a></li>
+    <li><a href="contact-us.html">Contact Us</a></li>
+  </ul>
+</div>
+<script>
+  function toggleMenu() {
+    const menu = document.querySelector(".nav-small .menu");
+    menu.classList.toggle("active");
+
+    // Add or remove the event listener based on the menu's state
+    if (menu.classList.contains("active")) {
+      document.addEventListener("click", closeMenuOnClickOutside);
+    } else {
+      document.removeEventListener("click", closeMenuOnClickOutside);
+    }
+  }
+
+  function closeMenuOnClickOutside(event) {
+    const menu = document.querySelector(".nav-small .menu");
+    const hamburger = document.querySelector(".hamburger");
+
+    // Close the menu if the click is outside both the menu and the hamburger
+    if (!menu.contains(event.target) && !hamburger.contains(event.target)) {
+      menu.classList.remove("active");
+      document.removeEventListener("click", closeMenuOnClickOutside); // Clean up listener
+    }
+  }
+</script>
+
+<!-- Content Section -->
+<div class="content">
+  <div class="container">
+    <h1 class="section-title">Staff Augmentation at GeniusHub Technologies</h1>
+    <p class="intro-text">At GeniusHub Technologies, our staffing model is designed to match the right talent with the right opportunity at the right time. We focus on three key stages to ensure your project's success:</p>
+
+    <h2 class="sub-heading">Key Steps in Our Staffing Model</h2>
+    
+    <div class="staffing-model">
+      <div class="model-step">
+        <h3>1. Staffing Assessment</h3>
+        <p>We work closely with you to understand your business and project needs. Our approach includes:</p>
+        <ul>
+          <li><strong>Business Goals & Objectives:</strong> Aligning with your core drivers.</li>
+          <li><strong>Organizational Structure & Culture:</strong> Recognizing your team dynamics.</li>
+          <li><strong>Project Scope:</strong> Reviewing timelines and deliverables.</li>
+          <li><strong>Current Staffing Evaluation:</strong> Identifying gaps in your team.</li>
+        </ul>
+        <p>Our goal is to ensure the right people are in the right roles to support your long-term success.</p>
+      </div>
+
+      <div class="model-step">
+        <h3>2. Contractor Selection</h3>
+        <p>We select contractors who best meet your requirements, with a focus on speed and quality:</p>
+        <ul>
+          <li><strong>Industry-Specific Account Teams:</strong> Specialized teams for quick identification of suitable candidates.</li>
+          <li><strong>Selection Process:</strong> Rigorous screening and matching with your company culture.</li>
+          <li><strong>Performance Guarantee:</strong> No charges if the contractor doesn’t meet expectations within 15 days.</li>
+        </ul>
+      </div>
+
+      <div class="model-step">
+        <h3>3. Performance Management</h3>
+        <p>We ensure the contractor’s performance aligns with your project objectives:</p>
+        <ul>
+          <li><strong>Onboarding & Orientation:</strong> Minimizing ramp-up time.</li>
+          <li><strong>Performance Reviews:</strong> Weekly assessments and quick issue resolution.</li>
+          <li><strong>Skill Enhancement:</strong> Ongoing training for contractors.</li>
+          <li><strong>Post-Contract Support:</strong> Continued support for smooth transitions.</li>
+        </ul>
+        <p>Our Right Hire Staffing Model guarantees the right talent, delivering high-quality results on time and within budget.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-container">
+    <!-- Services Section -->
+    <div class="footer-section footer-services">
+      <h3>Our Services</h3>
+      <div class="service-columns">
+        <div class="service-column">
+          <ul class="footer-links">
+		    <li><a href="cloud.html">Cloud Services</a></li>
+            <li><a href="platform.html">Platform Engineering</a></li>
+			<li><a href="ai-ml-ds.html">AI/ML/Data Science</a></li>
+          </ul>
+        </div>
+        <div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="erp.html">ERP Implementations</a></li>
+            <li><a href="application.html">Application Development</a></li>
+            <li><a href="staff.html">Staff Augmentation</a></li>                    
+          </ul>
+        </div>
+		<div class="service-column">
+          <ul class="footer-links">
+		  <li><a href="digital.html">E-Commerce</a></li>
+            <li><a href="quality.html">Quality Assurance</a></li>
+            <li><a href="offshore.html">Offshore Outsourcing</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Information -->
+    <div class="footer-section footer-contact">
+      <h3>Contact Us</h3>
+      <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
+      <p>📞 +1 (214) 432-5727</p>
+      <p>✉️ info@ghtinc.org</p>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2025 GeniusHub Technologies. All rights reserved.</p>
+  </div>
+</footer>
+</body>
+</html>
