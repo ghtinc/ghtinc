@@ -8,10 +8,38 @@
 </head>
 <style>
 /* Body Content Styles */
+/* Sidebar Styles */
+    .sidebar {
+      position: absolute;
+      left: 0;
+      top: 170px;
+      width: 250px;
+      height: 140%;
+      background-color: #FFFFFF;
+      padding-top: 20px;
+      text-align: Left;
+    }
+
+.sidebar a {
+  display: block;
+  color: #0047b3;
+  padding: 25px;
+  text-decoration: none;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight:bold;
+  font-size: 18px;
+  border-left: 5px solid transparent;
+  transition: border-left 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  border-left: 5px solid #f39c12; /* Orange left border */
+  color: #f39c12;
+}
 main {
     padding: 40px 20px;
     max-width: 1200px;
-    margin: 0 auto;
+    margin-left:280px;
     background-color: #f9f9f9;
 }
 
@@ -48,6 +76,7 @@ a:hover {
 @media (max-width: 768px) {
     main {
         padding: 30px 15px;
+		margin-left:200px;
     }
 
     section h2 {
@@ -57,6 +86,16 @@ a:hover {
     section p {
         font-size: 16px;
     }
+	.sidebar {
+    width: 200px;
+	height:100%;
+    top: 305px;
+  }
+
+  .sidebar a {
+    font-size: 18px;
+  }
+  
 }
 
 </style>
@@ -73,7 +112,7 @@ a:hover {
           <div class="right-section">
       <div class="contact-info">
         <div class="phone">
-          &#128222; <span class="phone-number">&nbsp;+1 (469) 988-5188</span> <!-- Phone Unicode -->
+          &#128222; <span class="phone-number">&nbsp;+1 (214) 432-5727</span> <!-- Phone Unicode -->
         </div>
         <div class="email">
           &#9993; <a href="mailto:info@ghtinc.org" class="email-link">&nbsp;info@ghtinc.org</a> <!-- Email Unicode -->
@@ -185,6 +224,19 @@ a:hover {
     }
   }
 </script>
+<!-- Sidebar -->
+  <div class="sidebar">
+    <a href="services.html">Services</a>
+    <a href="cloud.html">Cloud Services</a>
+	<a href="platform.html">Platform Engineering</a>
+	<a href="ai-ml-ds.html">AI/ML/Data Science</a>
+    <a href="erp.html">ERP Implementations</a>
+    <a href="application.html">Application Development</a>
+    <a href="quality.html">Quality Assurance</a>
+    <a href="staff.html">Staff Augmentation</a>
+    <a href="digital.html">E-Commerce</a>
+    <a href="offshore.html">Offshore Outsourcing</a>
+  </div>
   <main>
     <section class="intro">
         <h2>Empowering Your Business Through Technology</h2>
@@ -243,7 +295,7 @@ a:hover {
     <div class="footer-section footer-contact">
       <h3>Contact Us</h3>
       <p>📍 101 E Park Blvd, suite 600, Plano, 75074</p>
-      <p>📞 +1 (469) 988-5188</p>
+      <p>📞 +1 (214) 432-5727</p>
       <p>✉️ info@ghtinc.org</p>
     </div>
   </div>

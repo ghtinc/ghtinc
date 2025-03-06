@@ -15,10 +15,36 @@ body {
   padding: 0;
   background-color: #f4f4f4;
 }
+ .sidebar {
+      position: absolute;
+      left: 0;
+      top: 175px;
+      width: 250px;
+      height: 216%;
+      background-color: #FFFFFF;
+      padding-top: 20px;
+      text-align: Left;
+    }
 
+.sidebar a {
+  display: block;
+  color: #0047b3;
+  padding: 25px;
+  text-decoration: none;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight:bold;
+  font-size: 18px;
+  border-left: 5px solid transparent;
+  transition: border-left 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.sidebar a:hover {
+  border-left: 5px solid #f39c12; /* Orange left border */
+  color: #f39c12;
+}
 .why-ght-content {
-  width: 80%;
-  margin: 40px auto;
+  width: 70%;
+  margin: 40px 270px;
   background-color: #fff;
   padding: 20px;
   box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -73,9 +99,15 @@ ul li a:hover {
   margin-bottom: 0;
 }
 
+.footer-bottom p, .footer-contact p{
+	color:white;
+}
+
 @media screen and (max-width: 768px) {
   .why-ght-content {
-    width: 90%;
+    width: 60%;
+	margin-left:130px;
+	margin-top:20px;
   }
 
   h1 {
@@ -85,6 +117,15 @@ ul li a:hover {
   h2 {
     font-size: 1.5rem;
   }
+  .sidebar {
+        width: 120px;
+		top:305px;
+		text-align:Left;
+		height:470%;
+      }
+	  .sidebar a{
+	  font-size: 13px;
+	  }
 }
 
 </style>
@@ -213,7 +254,13 @@ ul li a:hover {
     }
   }
 </script>
-
+<!-- Sidebar -->
+  <div class="sidebar">
+    <a href="overview.html">About Us</a>
+    <a href="why-ght.html">Why GHT</a>
+    <a href="our-mission.html">Our Mission</a>
+    <a href="strategy.html">Strategic Framework</a>
+  </div>
   <!-- Main Content for "Why GeniusHub Technologies" -->
   <div class="why-ght-content">
     <h1>Why GeniusHub Technologies Inc.?</h1>

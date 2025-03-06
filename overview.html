@@ -8,11 +8,43 @@
 </head>
 <style>
 /* Body Content Styles */
-main {
-    padding: 40px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
+/* Sidebar Styles */
+    .sidebar {
+      position: absolute;
+      left: 0;
+      top: 170px;
+      width: 250px;
+      height: 100%;
+      background-color: #FFFFFF;
+      padding-top: 20px;
+      text-align: Left;
+    }
+
+.sidebar a {
+  display: block;
+  color: #0047b3;
+  padding: 25px;
+  text-decoration: none;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight:bold;
+  font-size: 18px;
+  border-left: 5px solid transparent;
+  transition: border-left 0.3s ease-in-out, color 0.3s ease-in-out;
 }
+
+.sidebar a:hover {
+  border-left: 5px solid #f39c12; /* Orange left border */
+  color: #f39c12;
+}
+
+
+
+    /* Body Content */
+    main {
+      margin-left: 260px; /* Space for sidebar */
+      padding: 40px 20px;
+      max-width: 1200px;
+    }
 
 /* Section Styling */
 section {
@@ -58,6 +90,18 @@ ul li strong {
     section p, ul li {
         font-size: 16px;
     }
+	.sidebar {
+        width: 120px;
+		top:290px;
+		text-align:Left;
+      }
+	  .sidebar a{
+	  font-size: 13px;
+	  }
+
+      main {
+        margin-left: 120px;
+      }
 }
 
 </style>
@@ -89,7 +133,7 @@ ul li strong {
       <a href="index.html">GHT</a>
     </div>
     <div class="dropdown">
-      <a href="overview.html">About Us</a>
+      <a href="overview.html">Overview</a>
       <div class="dropdown-content">
         <a href="why-ght.html">Why GHT</a>
         <a href="our-mission.html">Our Mission</a>
@@ -186,6 +230,14 @@ ul li strong {
     }
   }
 </script>
+<!-- Sidebar -->
+  <div class="sidebar">
+    <a href="overview.html">About Us</a>
+    <a href="why-ght.html">Why GHT</a>
+    <a href="our-mission.html">Our Mission</a>
+    <a href="strategy.html">Strategic Framework</a>
+  </div>
+
   <main>
     <section class="intro">
         <h2>Who We Are</h2>
